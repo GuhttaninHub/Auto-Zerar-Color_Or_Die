@@ -1,7 +1,10 @@
-local character = script.Parent
+local player = game:GetService("Players").LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
 local rootPart = character:WaitForChild("HumanoidRootPart")
 
-while true do 
+while true do
+    task.wait(0.5) -- Espera 0.5 segundos para teletransportar
+
     -- Mantém o personagem reto ao teletransportar
     rootPart.CFrame = CFrame.new(rootPart.Position) * CFrame.Angles(0, 0, 0)
 end
