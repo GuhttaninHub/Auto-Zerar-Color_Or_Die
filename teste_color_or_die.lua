@@ -1,13 +1,13 @@
-local player = game.Players.LocalPlayer
+local player = game:GetService("Players").LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 local rootPart = character:WaitForChild("HumanoidRootPart")
 
-while true do
-    task.wait(0.5) -- Espera 0.5 segundos para teletransportar
-
-    -- Mantém o personagem reto ao teletransportar
-    rootPart.CFrame = CFrame.new(rootPart.Position) * CFrame.Angles(0, 0, 0)
-end
+task.spawn(function() -- Executa em segundo plano
+    while true do
+        -- Mantém o personagem reto ao teletransportar
+        rootPart.CFrame = CFrame.new(rootPart.Position) * CFrame.Angles(0, 0, 0)
+    end
+end)
 
 local door = workspace.GameplayParts.Doors.Normal.Paintable.Black.Core -- Altere para o caminho da porta
 
