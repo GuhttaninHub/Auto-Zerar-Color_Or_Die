@@ -1,14 +1,3 @@
-local player = game:GetService("Players").LocalPlayer
-local character = player.Character or player.CharacterAdded:Wait()
-local rootPart = character:WaitForChild("HumanoidRootPart")
-
-task.spawn(function() -- Executa em segundo plano
-    while true do
-        -- Mantém o personagem reto ao teletransportar
-        rootPart.CFrame = CFrame.new(rootPart.Position) * CFrame.Angles(0, 0, 0)
-    end
-end)
-
 local door = workspace.GameplayParts.Doors.Normal.Paintable.Black.Core -- Altere para o caminho da porta
 
 if door:FindFirstChild("ClickDetector") then
@@ -104,7 +93,7 @@ wait(0.2)
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
-local targetCFrame = CFrame.new(264, 5.5, 42, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local targetCFrame = CFrame.new(247.982864, 2.97397065, 41.4689713, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 character:SetPrimaryPartCFrame(targetCFrame)
 
 wait(0.5)
@@ -141,7 +130,7 @@ wait(0.5)
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
-local targetCFrame = CFrame.new(204, 5.4749999, -42, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local targetCFrame = CFrame.new(202.208984, 2.97397113, -29.9900856, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 character:SetPrimaryPartCFrame(targetCFrame)
 
 wait(0.5)
@@ -178,7 +167,7 @@ wait(0.5)
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
-local targetCFrame = CFrame.new(324, 5.82124996, 78, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+local targetCFrame = CFrame.new(324.612396, 2.97397041, 70.8495102, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 character:SetPrimaryPartCFrame(targetCFrame)
 
 wait(0.2)
@@ -201,7 +190,7 @@ wait(0.2)
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
-local targetCFrame = CFrame.new(359.628906, 4.67499971, 105.75106, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local targetCFrame = CFrame.new(355.857819, 2.97397065, 99.7144089, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 character:SetPrimaryPartCFrame(targetCFrame)
 
 wait(0.2)
@@ -215,7 +204,7 @@ wait(0.5)
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
-local targetCFrame = CFrame.new(844.648193, 72.281189, -595.522583, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local targetCFrame = CFrame.new(834.010864, 69.2821808, -595.310425, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 character:SetPrimaryPartCFrame(targetCFrame)
 
 wait(0.5)
@@ -238,7 +227,7 @@ wait(0.2)
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
-local targetCFrame = CFrame.new(867.124268, 69.8957977, -593.402771, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local targetCFrame = CFrame.new(864.242432, 69.2789459, -598.358948, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 character:SetPrimaryPartCFrame(targetCFrame)
 
 wait(0.2)
@@ -281,7 +270,7 @@ wait(0.5)
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
-local targetCFrame = CFrame.new(288, 5.70172834, -114, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local targetCFrame = CFrame.new(288.547272, 2.97397113, -103.199936, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 character:SetPrimaryPartCFrame(targetCFrame)
 
 wait(0.5)
@@ -361,7 +350,7 @@ wait(0.2)
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
-local targetCFrame = CFrame.new(216, 7.50000048, -138, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+local targetCFrame = CFrame.new(214.371872, 2.97397208, -128.407425, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 character:SetPrimaryPartCFrame(targetCFrame)
 
 wait(0.2)
@@ -442,7 +431,7 @@ wait(0.2)
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
-local targetCFrame = CFrame.new(336, 7, 6, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+local targetCFrame = CFrame.new(324.861816, 2.97397137, 6.11185312, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 character:SetPrimaryPartCFrame(targetCFrame)
 
 wait(0.2)
@@ -682,4 +671,43 @@ character:SetPrimaryPartCFrame(targetCFrame)
 wait(0.4)
 
 local VIM = game:GetService("VirtualInputManager")
+
 VIM:SendKeyEvent(true, Enum.KeyCode.E, false, nil)
+
+wait(0.2)
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local targetCFrame = CFrame.new(201.852753, 7.00000715, 29.5527039, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+character:SetPrimaryPartCFrame(targetCFrame)
+
+local door = workspace.GameplayParts.Doors.Normal.Paintable.White.Core
+
+if door:FindFirstChild("ClickDetector") then
+    fireclickdetector(door.ClickDetector)
+    wait(0.5)
+    fireclickdetector(door.ClickDetector)
+    wait(0.5)
+    fireclickdetector(door.ClickDetector)
+    wait(0.5)
+    fireclickdetector(door.ClickDetector)
+    wait(0.5)
+    fireclickdetector(door.ClickDetector)
+    wait(0.5)
+    fireclickdetector(door.ClickDetector)
+end
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local targetCFrame = CFrame.new(-14.1819038, 5.64366865, 113.496239, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+character:SetPrimaryPartCFrame(targetCFrame)
+
+wait(0.5)
+
+local player = game.Players.LocalPlayer
+if player and player.Character then
+    local humanoid = player.Character:FindFirstChild("Humanoid")
+    if humanoid then
+        humanoid.Health = 0
+    end
+end
