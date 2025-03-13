@@ -678,7 +678,7 @@ wait(0.2)
 
 local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
-local targetCFrame = CFrame.new(201.852753, 7.00000715, 29.5527039, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+local targetCFrame = CFrame.new(-22, 9, 30, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 character:SetPrimaryPartCFrame(targetCFrame)
 
 local door = workspace.GameplayParts.Doors.Normal.Paintable.White.Core
